@@ -12,14 +12,15 @@
     <div id="container">
     </div>
 
-    <audio src="https://ymisbah.github.io/projectdell/sampaijadidebu.mp3" id="linkmp3"></audio><script>audio = new Audio('' + linkmp3.src);</script>
+    <audio id="myAudio" src="https://ymisbah.github.io/projectdell/sampaijadidebu.mp3"></audio>
     
     <script src="https://pchen66.github.io/js/three/three.min.js"></script>
     <script src="https://pchen66.github.io/js/panolens/panolens.min.js"></script>
     
     <script>
     window.addEventListener('load', function () {
-    alert("It's loaded!")
+    var x = document.getElementById("myAudio"); 
+    x.play(); 
     })
     </script>
     <script>
