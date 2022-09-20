@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panolens</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://ymisbah.github.io/projectdell/css/style.css" type="text/css">
 </head>
 <body>
     
@@ -15,7 +15,12 @@
 
     <script src="https://pchen66.github.io/js/three/three.min.js"></script>
     <script src="https://pchen66.github.io/js/panolens/panolens.min.js"></script>
-    <script src="js/script.js"></script>
+    <script>
+    const container = document.querySelector('#container')
+    const panorama = new PANOLENS.ImagePanorama( 'https://ymisbah.github.io/projectdell/images/pano.jpg' );
+    const viewer = new PANOLENS.Viewer({container:container});
+    viewer.add( panorama );
+    </script>
 
 </body>
 </html>
