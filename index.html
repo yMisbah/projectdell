@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ProjectDell</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
+    <header class="masthead" style="background-image:url('assets/img/intro-bg.jpg');">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading">Haloo</h1>
+                        <p class="intro-text">Aku lagi gabut nih</p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center content-section" id="about">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h1>Mainan yuk</h1>
+                <p>Tinggal ngeklik aja kok</p>
+                <button class="btn btn-primary btn-lg btn-default" type="button" onclick="myFunction()">Klik disini ya</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <p>projectdell © 2022</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/grayscale.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function myFunction() {
+            Swal.fire({
+            title: 'Aku cerita dulu ya, jadi kemarin itu aku lagi nonton youtube trus nemu video yang menarik',
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            allowEnterKey: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'lanjut',
+            reverseButtons: true,
+            allowOutsideClick: false
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                title: 'Videonya itu video cuplikan dari tiktok yang isinya tentang bikin website kyk gini buat gombalin ceweknya',
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'lanjut',
+                reverseButtons: true,
+                allowOutsideClick: false
+                
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                        title: 'Nah karena gabut, aku kepikiran buat bikin ginian juga biar dikira kyk anak IT yg pinter coding haha. Tapi tenang aja aku gak gombalin kamu soalnya kamu gasuka digombalin',
+                        allowOutsideClick: false,
+                        allowEscapeKey: false,
+                        allowEnterKey: false,
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'lanjut',
+                        reverseButtons: true,
+                        allowOutsideClick: false
+                        }).then((result) => {
+                        if (result.isConfirmed) {
+                        Swal.fire({
+                        title: 'Karena aku gak pingin kyk yg di tiktok jadi kutambahin sesuatu. Klik lanjut aja buat liat halaman selanjutnya. Udah ya ceritanya, silahkan di klik tombolnya hehe',
+                        allowOutsideClick: false,
+                        allowEscapeKey: false,
+                        allowEnterKey: false,
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'lanjut',
+                        reverseButtons: true,
+                        allowOutsideClick: false
+                        }).then((result) => {
+                        if (result.isConfirmed) {
+                            location.replace("http://127.0.0.1:5500/panorama.html")
+                        }
+                     })
+                        }
+                     })
+                        }
+                     })
+                }
+            })
+    }
+        </script>
+
+
+</body>
+</html>
