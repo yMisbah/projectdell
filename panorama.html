@@ -19,8 +19,24 @@
     
     <script>
     window.addEventListener('load', function () {
-    var x = document.getElementById("myAudio"); 
-    x.play(); 
+          function myFunction() {
+            Swal.fire({
+            title: 'Love U',
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            allowEnterKey: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'too',
+            reverseButtons: true,
+            allowOutsideClick: false
+        }).then((result) => {
+                        if (result.isConfirmed) {
+                            var x = document.getElementById("myAudio"); 
+                            x.play(); 
+                        }
+                     })
+    }
     })
     </script>
     <script>
