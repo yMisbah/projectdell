@@ -19,7 +19,6 @@
     
     <script>
     window.addEventListener('load', function () {
-          function myFunction() {
             Swal.fire({
             title: 'Love U',
             allowOutsideClick: false,
@@ -30,13 +29,12 @@
             confirmButtonText: 'too',
             reverseButtons: true,
             allowOutsideClick: false
-        }).then((result) => {
+                        }).then((result) => {
                         if (result.isConfirmed) {
                             var x = document.getElementById("myAudio"); 
                             x.play(); 
                         }
                      })
-    }
     })
     </script>
     <script>
