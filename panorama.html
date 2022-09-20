@@ -11,11 +11,14 @@
     
     <div id="container">
     </div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/JjFeJ608VKc?controls=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+    <audio src="https://ymisbah.github.io/projectdell/sampaijadidebu.mp3" id="linkmp3"></audio><script>audio = new Audio('' + linkmp3.src);</script>
+    
     <script src="https://pchen66.github.io/js/three/three.min.js"></script>
     <script src="https://pchen66.github.io/js/panolens/panolens.min.js"></script>
+    
     <script>
+    audio.play()
     const container = document.querySelector('#container')
     const panorama = new PANOLENS.ImagePanorama( 'https://ymisbah.github.io/projectdell/images/pano.jpg' );
     const viewer = new PANOLENS.Viewer({container:container});
