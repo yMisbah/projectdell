@@ -18,7 +18,11 @@
     <script src="https://pchen66.github.io/js/panolens/panolens.min.js"></script>
     
     <script>
-    audio.play()
+    window.addEventListener('load', function () {
+    alert("It's loaded!")
+    })
+    </script>
+    <script>
     const container = document.querySelector('#container')
     const panorama = new PANOLENS.ImagePanorama( 'https://ymisbah.github.io/projectdell/images/pano.jpg' );
     const viewer = new PANOLENS.Viewer({container:container});
